@@ -7,7 +7,63 @@
         <title>dashy-template</title>
     </head>
     <body>
-        <div id="app"></div>
+        <div class="hspacer"></div>
+        <div id="app">
+            <main>
+                <section id="header">
+                    <h1 id="header_date"></h1>
+                    <h2 id="header_greet"></h2>
+                </section>
+
+                <section id="apps">
+                    <h3>Applications</h3>
+                    <div id="app_list">
+                        <div class="app_item">
+                            <a href="https://github.com">
+                                <div class="app_icon">
+                                    <iconify-icon
+                                        inline
+                                        icon="arcticons:github"
+                                        height="48px"
+                                    ></iconify-icon>
+                                </div>
+                                <div class="app_text">{{name}}</div>
+                            </a>
+                        </div>
+                        <div class="app_item">
+                            <a href="https://github.com">
+                                <div class="app_icon">
+                                    <iconify-icon
+                                        inline
+                                        icon="arcticons:github"
+                                        height="48px"
+                                    ></iconify-icon>
+                                </div>
+                                <div class="app_text">{{name}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <section id="links">
+                    <script type="text/handlebars-template" id="links-template">
+                        <h3>Bookmarks</h3>
+                        <div id="links_loop">
+                            {{#bookmarks}}
+                                <div id="links_item">
+                                    <h4>{{category}}</h4>
+                                    {{#links}}
+                                        <a href="{{url}}" target="{{target}}" class="theme_color-border theme_text-select">{{name}}</a>
+                                    {{/links}}
+                                </div>
+                            {{/bookmarks}}
+                        </div>
+                    </script>
+                </section> -->
+            </main>
+        </div>
+        <div class="hspacer"></div>
         <script type="module" src="/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     </body>
 </html>
