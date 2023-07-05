@@ -67,18 +67,26 @@ section h3 {
     text-transform: uppercase;
 }
 
-#app_list {
+.app_list {
     display: grid;
     grid-column-gap: 0px;
-    /* grid-row-gap: var(--module-spacing); */
+    grid-row-gap: var(--module-spacing);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
 }
 
 .app_item {
-    padding: 4px;
+    padding: 2px;
+    margin: 2px;
     display: flex;
     align-items: center;
+    border: 1px solid var(--color-bg);
+    border-radius: 4px;
+    transition: border 0.4s ease-in-out;
+}
+
+.app_item:hover {
+    border: 1px solid var(--color-acc);
 }
 
 .app_item a {
