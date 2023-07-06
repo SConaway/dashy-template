@@ -8,14 +8,14 @@
     </head>
     <body>
         <div class="hspacer"></div>
-        <div id="app">
+        <div class="app">
             <main>
-                <section id="header">
+                <section class="header">
                     <h1 id="header_date"></h1>
                     <h2 id="header_greet"></h2>
                 </section>
 
-                <section id="apps">
+                <section class="apps">
                     <h3>Applications</h3>
                     <div class="app_list">
                         <div class="app_item">
@@ -45,21 +45,204 @@
                     </div>
                 </section>
 
-                <!-- <section id="links">
-                    <script type="text/handlebars-template" id="links-template">
-                        <h3>Bookmarks</h3>
-                        <div id="links_loop">
-                            {{#bookmarks}}
-                                <div id="links_item">
-                                    <h4>{{category}}</h4>
-                                    {{#links}}
-                                        <a href="{{url}}" target="{{target}}" class="theme_color-border theme_text-select">{{name}}</a>
-                                    {{/links}}
-                                </div>
-                            {{/bookmarks}}
+                <section class="links">
+                    <h3>Bookmarks</h3>
+                    <div class="links_list">
+                        <div class="links_item">
+                            <div class="link_category_header">
+                                <h4>{{category}}</h4>
+                            </div>
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
                         </div>
-                    </script>
-                </section> -->
+
+                        <div class="links_item">
+                            <div class="link_category_header">
+                                <h4>{{category}}</h4>
+                            </div>
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                        </div>
+                        <div class="links_item">
+                            <div class="link_category_header">
+                                <h4>{{category}}</h4>
+                            </div>
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                        </div>
+                        <div class="links_item">
+                            <div class="link_category_header">
+                                <h4>{{category}}</h4>
+                            </div>
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                        </div>
+                        <div class="links_item">
+                            <div class="link_category_header">
+                                <h4>{{category}}</h4>
+                            </div>
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                        </div>
+                        <div class="links_item">
+                            <div class="link_category_header">
+                                <h4>{{category}}</h4>
+                            </div>
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                        </div>
+
+                        <div class="links_item">
+                            <div class="link_category_header">
+                                <h4>{{category}}</h4>
+                            </div>
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                        </div>
+
+                        <div class="links_item">
+                            <div class="link_category_header">
+                                <h4>{{category}}</h4>
+                            </div>
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                        </div>
+
+                        <div class="links_item">
+                            <div class="link_category_header">
+                                <h4>{{category}}</h4>
+                            </div>
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                            <a
+                                href="{{url}}"
+                                target="{{target}}"
+                                class="theme_color-border theme_text-select"
+                                >{{name}}</a
+                            >
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
         <div class="hspacer"></div>
