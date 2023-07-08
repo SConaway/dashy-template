@@ -1,3 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -72,8 +81,11 @@ section h3 {
     display: grid;
     grid-column-gap: 0px;
     grid-row-gap: var(--module-spacing);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 80%), 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     width: 100%;
+
+    /* TODO: figure out grid/flex */
 }
 
 .app_item {
@@ -84,6 +96,9 @@ section h3 {
     border: 1px solid var(--color-bg);
     border-radius: 4px;
     transition: border 0.4s ease-in-out;
+    justify-content: center;
+
+    /* TODO: add border between */
 }
 
 .app_item:hover {
@@ -94,6 +109,8 @@ section h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    text-decoration: none;
 }
 
 .app_icon {
@@ -114,12 +131,6 @@ section h3 {
     grid-column-gap: 8px;
 }
 
-.links_item {
-    flex-direction: column;
-    text-align: center;
-    min-width: 250px;
-}
-
 .link_category_header {
     width: 100%;
     border-bottom: 1px solid var(--color-acc);
@@ -129,6 +140,12 @@ section h3 {
 .link_category_header h4 {
     color: var(--color-acc);
     margin-bottom: 0.25em;
+}
+
+.links_item {
+    flex-direction: column;
+    text-align: center;
+    min-width: 250px;
 }
 
 .links_item a {
