@@ -4,12 +4,14 @@
     "license": "Unlicense",
     "type": "module",
     "scripts": {
-        "dev": "vite",
+        "dev": "yarn wrangler pages dev --kv DATA --proxy 5173 -- vite dev",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "clean": "rm -rf dist"
     },
     "devDependencies": {
-        "vite": "^4.4.2"
+        "vite": "^4.4.2",
+        "wrangler": "^3.1.2"
     },
     "packageManager": "yarn@3.6.1"
 }

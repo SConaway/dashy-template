@@ -6,4 +6,10 @@ export default {
         sourcemap: true,
         minify: false,
     },
+    server: {
+        hmr: {
+            port: 5178,
+        },
+        strictPort: true,
+    },
 };
