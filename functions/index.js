@@ -1,4 +1,5 @@
 export async function onRequest(context) {
+    return new Response(context.request.url);
     // return new Response(
     //     (await fetch(context.request.url + '/index.html')).body,
     // );
