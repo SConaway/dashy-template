@@ -18,9 +18,9 @@ html {
     -webkit-text-size-adjust: 100%;
 
     /* set colors as vars */
-    --color-bg: #242b33;
+    --color-bg: #1f252b;
     --color-pri: #effbff;
-    --color-acc: #6ee2ff;
+    --color-acc: #52dcff;
 
     --module-spacing: 1.5em;
 }
