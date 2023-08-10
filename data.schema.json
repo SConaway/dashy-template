@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "apps": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "icon": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "url",
+                        "icon"
+                    ]
+                }
+            ]
+        },
+        "links": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "category": {
+                            "type": "string"
+                        },
+                        "links": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "name",
+                                        "url"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "category",
+                        "links"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "apps",
+        "links"
+    ]
+}
