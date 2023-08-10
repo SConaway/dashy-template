@@ -16,4 +16,4 @@
 
 I created this project to serve as a new tab page for my browser as well as shortcut to things I use. I wanted something that was simple, fast, and easy to customize. I also wanted to learn more about cloudflare pages and workers. I hope you find this useful.
 
-I was significantly inspired by jeroenpardon's [https://github.com/jeroenpardon/sui](sui) project. I copied theirs in order to get experience with the cloudflare pages and workers. I also wanted to make some changes to the UI and add some features while simplifying the code and design.
+I was significantly inspired by [jeroenpardon's `sui`](https://github.com/jeroenpardon/sui). I made something similiar to theirs in order to get experience with cloudflare pages and workers. I also wanted to make some changes to the UI and add some features while simplifying the code and design to better match what I wanted.
