@@ -1,5 +1,6 @@
 import handlebars from 'vite-plugin-handlebars';
 import fsp from 'fs/promises';
+import yaml from 'yaml';
 
 /** @type {import('vite').UserConfig} */
 export default {
@@ -16,10 +17,10 @@ export default {
                 // rethrow to describe the error
                 try {
                     const data = await fsp
-                        .readFile('./data.json', 'utf-8')
-                        .then(JSON.parse);
+                        .readFile('./data.yaml', 'utf-8')
+                        .then(yaml.parse);
 
-                    console.log(data);
+                    console.log(JSON.stringify(data, null, 2));
                     return data;
                 } catch (err) {
                     console.error('[Error] Error parsing config file');
