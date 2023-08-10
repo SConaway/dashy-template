@@ -18,229 +18,41 @@
                 <section class="apps">
                     <h3>Applications</h3>
                     <div class="app_list">
+                        {{#each apps}}
                         <div class="app_item">
-                            <a href="https://github.com">
+                            <a href="https://{{this.url}}">
                                 <div class="app_icon">
                                     <iconify-icon
                                         inline
-                                        icon="arcticons:github"
+                                        icon="{{this.icon}}"
                                         height="48px"
                                     ></iconify-icon>
                                 </div>
-                                <div class="app_text">{{name}}</div>
+                                <div class="app_text">{{this.name}}</div>
                             </a>
                         </div>
-                        <div class="app_item">
-                            <a href="https://github.com">
-                                <div class="app_icon">
-                                    <iconify-icon
-                                        inline
-                                        icon="arcticons:github"
-                                        height="48px"
-                                    ></iconify-icon>
-                                </div>
-                                <div class="app_text">{{name}}</div>
-                            </a>
-                        </div>
+                        {{/each}}
                     </div>
                 </section>
 
                 <section class="links">
                     <h3>Bookmarks</h3>
                     <div class="links_list">
+                        {{#each links}}
                         <div class="links_item">
                             <div class="link_category_header">
-                                <h4>{{category}}</h4>
+                                <h4>{{this.category}}</h4>
                             </div>
+                            {{#each this.links}}
                             <a
-                                href="{{url}}"
+                                href="{{this.url}}"
                                 target="{{target}}"
                                 class="theme_color-border theme_text-select"
-                                >{{name}}</a
+                                >{{this.name}}</a
                             >
+                            {{/each}}
                         </div>
-
-                        <div class="links_item">
-                            <div class="link_category_header">
-                                <h4>{{category}}</h4>
-                            </div>
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                        </div>
-                        <div class="links_item">
-                            <div class="link_category_header">
-                                <h4>{{category}}</h4>
-                            </div>
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                        </div>
-                        <div class="links_item">
-                            <div class="link_category_header">
-                                <h4>{{category}}</h4>
-                            </div>
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                        </div>
-                        <div class="links_item">
-                            <div class="link_category_header">
-                                <h4>{{category}}</h4>
-                            </div>
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                        </div>
-                        <div class="links_item">
-                            <div class="link_category_header">
-                                <h4>{{category}}</h4>
-                            </div>
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                        </div>
-
-                        <div class="links_item">
-                            <div class="link_category_header">
-                                <h4>{{category}}</h4>
-                            </div>
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                        </div>
-
-                        <div class="links_item">
-                            <div class="link_category_header">
-                                <h4>{{category}}</h4>
-                            </div>
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                        </div>
-
-                        <div class="links_item">
-                            <div class="link_category_header">
-                                <h4>{{category}}</h4>
-                            </div>
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                            <a
-                                href="{{url}}"
-                                target="{{target}}"
-                                class="theme_color-border theme_text-select"
-                                >{{name}}</a
-                            >
-                        </div>
+                        {{/each}}
                     </div>
                 </section>
             </main>
