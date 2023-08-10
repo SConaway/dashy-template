@@ -9,7 +9,9 @@
 1. fork, set as private
 2. create cloudflare resources
     1. create a new pages project
-        1. the first build might fail, you need to continue and then switch to builder v2
+        1. set the build command to `yarn build`
+        2. set the output directory to `/dist`
+        3. the first build might fail, you need to continue and then switch to builder v2
 3. use as you'd like
 
 ## About
