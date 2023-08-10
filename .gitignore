@@ -15,8 +15,9 @@ node_modules/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-yarn.lock
+# yarn.lock
 # ^^ i hate these
+# but CF pages requires it to use yarn rather than npm
 
 dist
 dist-ssr
