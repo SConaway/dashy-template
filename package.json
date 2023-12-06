@@ -9,7 +9,7 @@
         "preview": "vite preview"
     },
     "devDependencies": {
-        "vite": "^4.4.2",
+        "vite": "^4.4.12",
         "vite-plugin-handlebars": "^1.6.0",
         "yaml": "^2.3.1"
     },
