@@ -9,9 +9,9 @@
         "preview": "vite preview"
     },
     "devDependencies": {
-        "vite": "^4.4.2",
-        "vite-plugin-handlebars": "^1.6.0",
-        "yaml": "^2.3.1"
+        "vite": "^5.2.11",
+        "vite-plugin-handlebars": "^2.0.0",
+        "yaml": "^2.4.2"
     },
-    "packageManager": "yarn@3.6.1"
+    "packageManager": "yarn@4.2.2"
 }
