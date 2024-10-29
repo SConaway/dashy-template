@@ -1,76 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dashyy-template</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="hspacer"></div>
     <div class="app">
-      <main>
-        <section class="header">
-          <h1 id="header_date"></h1>
-          <h2 id="header_greet"></h2>
-        </section>
+        <main>
+            <section class="header">
+                <h1 id="header_date"></h1>
+                <h2 id="header_greet"></h2>
+            </section>
 
-        <section class="search">
-          <form id="searchform">
-            <input type="text" id="searchbar" placeholder="Search" autofocus />
-            <button type="submit" id="searchbtn">
-              <iconify-icon
-                inline
-                icon="arcticons:searchbar-ex"
-                height="24px"
-              ></iconify-icon>
-            </button>
-          </form>
-        </section>
+            <section class="search">
+                <form id="searchform">
+                    <input type="text" id="searchbar" placeholder="Search" autofocus />
+                    <button type="submit" id="searchbtn">
+                        <iconify-icon inline icon="arcticons:searchbar-ex" height="24px"></iconify-icon>
+                    </button>
+                </form>
+            </section>
 
-        <section class="apps">
-          <h3>Applications</h3>
-          <div class="app_list">
-            {{#each apps}}
-            <div class="app_item">
-              <a href="{{url this.url}}">
-                <div class="app_icon">
-                  <iconify-icon
-                    inline
-                    icon="{{this.icon}}"
-                    height="48px"
-                  ></iconify-icon>
+            <section class="apps">
+                <h3>Applications</h3>
+                <div class="app_list">
+                    {{#each apps}}
+                    <a href="{{url this.url}}">
+                        <div class="app_item">
+                            <div class="app_icon">
+                                <iconify-icon inline icon="{{this.icon}}" height="48px"></iconify-icon>
+                            </div>
+                            <div class="app_text">{{this.name}}</div>
+                        </div>
+                    </a>
+                    {{/each}}
                 </div>
-                <div class="app_text">{{this.name}}</div>
-              </a>
-            </div>
-            {{/each}}
-          </div>
-        </section>
+            </section>
 
-        <section class="links">
-          <h3>Bookmarks</h3>
-          <div class="links_list">
-            {{#each links}}
-            <div class="links_item">
-              <div class="link_category_header">
-                <h4>{{this.category}}</h4>
-              </div>
-              {{#each this.links}}
-              <a
-                href="{{url this.url}}"
-                class="theme_color-border theme_text-select"
-                >{{this.name}}</a
-              >
-              {{/each}}
-            </div>
-            {{/each}}
-          </div>
-        </section>
-      </main>
+            <section class="links">
+                <h3>Bookmarks</h3>
+                <div class="links_list">
+                    {{#each links}}
+                    <div class="links_item">
+                        <div class="link_category_header">
+                            <h4>{{this.category}}</h4>
+                        </div>
+                        {{#each this.links}}
+                        <a href="{{url this.url}}" class="theme_color-border theme_text-select">{{this.name}}</a>
+                        {{/each}}
+                    </div>
+                    {{/each}}
+                </div>
+            </section>
+        </main>
     </div>
     <div class="hspacer"></div>
     <script type="module" src="/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-  </body>
+</body>
+
 </html>

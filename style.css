@@ -90,26 +90,23 @@ section h3 {
     padding: 2px;
     margin: 2px;
     display: flex;
-    align-items: center;
     border: 1px solid var(--color-bg);
-    border-radius: 4px;
+    border-radius: 8px;
     transition: border 0.4s ease-in-out;
     justify-content: center;
+    flex: 1;
 }
 
 .app_item:hover {
     border: 1px solid var(--color-acc);
 }
 
-.app_item a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+.app_list a {
     text-decoration: none;
 }
 
 .app_icon {
+    margin-left: 1em;
     margin-right: 1em;
 }
 
@@ -117,15 +114,13 @@ section h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
-    overflow: hidden;
     min-width: 10ch;
     text-align: center;
 }
 
 .links_list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-column-gap: 8px;
     grid-row-gap: 8px;
 }
@@ -145,20 +140,8 @@ section h3 {
 .links_item {
     flex-direction: column;
     text-align: center;
-    min-width: 250px;
+    min-width: 230px;
 }
-
-/* bottom border only if wrapping */
-/* @media (min-width: 501px) {
-    .links_item::after {
-        content: "";
-        display: block;
-        width: 50%;
-        border-bottom: 1px solid rgba(239, 251, 255, 0.5);
-        margin: auto;
-        margin-top: 0.5em;
-    }
-} */
 
 .links_item a {
     color: var(--color-pri);
@@ -178,7 +161,6 @@ section.search {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 1em;
 }
 
 form#searchform {
@@ -192,7 +174,7 @@ input#searchbar {
     padding: 0.5em;
     margin: 0.5em;
     border: 1px solid var(--color-acc);
-    border-radius: 4px;
+    border-radius: 8px;
     background: var(--color-bg);
     color: var(--color-pri);
     width: 80%;
@@ -201,10 +183,10 @@ input#searchbar {
 }
 
 button#searchbtn {
-    padding: 0.5em;
+    padding: 0.8em;
     margin: 0.5em;
     border: 1px solid var(--color-acc);
-    border-radius: 4px;
+    border-radius: 8px;
     background: var(--color-bg);
     color: var(--color-pri);
     transition: background 0.3s ease-in-out;

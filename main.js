@@ -42,7 +42,7 @@ document.getElementById("searchform").addEventListener("submit", (e) => {
     if (searchInput.search("://") !== -1) {
         console.log("found ://");
         go(searchInput);
-    } else if (searchInput.match(/[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}/)) {
+    } else if (searchInput.match(/^[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}/)) {
         console.log("found domain");
         go(`http://${searchInput}`);
     } else go(`https://www.google.com/search?q=${searchInput}`);

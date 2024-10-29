@@ -5,13 +5,14 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview"
+        "build": "yarn validate && vite build",
+        "preview": "vite preview",
+        "validate": "node validate.js"
     },
     "devDependencies": {
-        "vite": "^5.2.11",
+        "vite": "^5.4.3",
         "vite-plugin-handlebars": "^2.0.0",
-        "yaml": "^2.4.2"
+        "yaml": "^2.5.1"
     },
-    "packageManager": "yarn@4.2.2"
+    "packageManager": "yarn@4.5.1"
 }
